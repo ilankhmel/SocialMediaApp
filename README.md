@@ -1,4 +1,7 @@
-A Fullstack social media application I built with React.js, mongoAtlas, express.js, Socket.io and more.
+A Fullstack social media application I built with React.js, mongoAtlas, express.js, Socket.io.
+
+Application is live on: https://social-media-app-dw48.onrender.com/#/
+
 It includes posts feed, users profile page, messenger application, live notifications, image uploader, google maps and much more!
 
 This app allows users to:
