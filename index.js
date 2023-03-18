@@ -31,21 +31,8 @@ try{
 
 //Middleware
 app.use(express.json())
-app.use(helmet())
+// app.use(helmet())
 app.use(morgan())
-
-app.use(
-    helmet.contentSecurityPolicy({
-      directives: {
-        "default-src": ["'self'"],
-        "connect-src": ["'self'", "'unsafe-inline'"],
-        "img-src": ["'self'", "data:"],
-        "style-src-elem": ["'self'", "data:"],
-        "script-src": ["'unsafe-inline'", "'self'"],
-        "object-src": ["'none'"],
-      },
-    })
-  );
 
 if (process.env.NODE_ENV === 'production') {
     // app.use(express.static(path.resolve(__dirname, 'public')))
